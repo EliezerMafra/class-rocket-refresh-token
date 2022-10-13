@@ -32,7 +32,7 @@ class AuthenticateUserUseCase {
 
     await client.refreshToken.deleteMany({
       where: {
-        userId: userAlreadyExists.id,
+        userid: userAlreadyExists.id,
       },
     });
 
